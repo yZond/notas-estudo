@@ -1,0 +1,60 @@
+body {
+    background-color:blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    background-color: #af6b4c;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 
+
+}
+header a {
+    color: #fff;
+    text-decoration: none; 
+    background-color: #68402d;
+    padding: 5px 20px;
+    border-radius: 4px;
+
+}
+
+header a:hover {
+
+    background-color: #68402d;
+
+
+}
+p {
+    margin 0;
+    border-radius: 20px;
+    /* margin-bottom: 100; */
+}
+/* para referenciar um ID */
+/* cntrl + ; para anotações */
+h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* top right bottom left */ 
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #000;
+
+}
+
+main {
+
+    padding: 16px;
+
+}
+
+section {
+
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+
+
+}

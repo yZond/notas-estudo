@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exemplo</title>
+</head>
+<body>
+   
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Minha Página HTML batata frita</h1>
+    </header>
+ 
+    <!-- Corpo da página -->
+    <main>
+        <section>
+            <h2>Seção de Listas</h2>
+            <div class="container">
+                <!-- Lista não ordenada -->
+                <div>
+                    <h3>Lista não ordenada:</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <!-- Lista ordenada -->
+                <div>
+                    <h3>Lista ordenada:</h3>
+                    <ol>
+                        <li>Primeiro item</li>
+                        <li>Segundo item</li>
+                        <li>Terceiro item</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+ 
+        <section>
+            <h2>Como incorporar Imagens e Videos</h2>
+
+            <hr>
+            <img src="https://tse4.mm.bing.net/th/id/OIP.6IMDs_eLBPMHs-w3MhcXAwHaE7?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="gato na praia" width="600">
+            <hr>
+            <iframe width="600" height="315" src="https://www.youtube.com/embed/SZ9wU9Twzp0?si=jgMOVWyGvO2NrPFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <hr>
+
+        </section>
+
+
+
+        <section>
+
+            <h2>Formulario Simples</h2>
+
+            <form action="">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="name" required>
+
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <br>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea id="mensagem"></textarea>
+
+                <br>
+
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" min="18" max="40" required>
+
+                <br>
+
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" required>
+
+                <br>
+
+                <label for="anexo">Anexo:</label>
+                <input type="file" id="anexo" required>
+
+                <br>
+
+                <button type="submit">Enviar</button>
+
+                <br>
+
+                <button type="reset">Limpar</button>
+
+            </form>
+
+        </section>
+</body>
+</html>

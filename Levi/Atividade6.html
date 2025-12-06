@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista de Números Pares até 10</h1>
+
+    <ul id="lista">Lista</ul>
+
+        <script>
+            let ul = document.getElementById("lista");
+
+            for (let x = 1 ; x <=10 ; x++) {
+                if (x%2==0){
+
+                ul.innerHTML+= "<li>Número " + x + "</li>"
+                }
+            }
+
+        </script>
+</body>
+</html>
