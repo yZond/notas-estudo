@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista</title>
+  </head>
+  <body>
+
+    <style>
+      .azul {
+        color: blue;
+        font-weight: bold;
+
+      }
+
+      .vermelho {
+        color: red;
+        font-weight: bold;
+      }
+
+      .verde{
+        color: green;
+        font-weight: bold;
+      }
+
+      .preto{
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+
+    <h1 id="titulo" class="azul" class="vermelho"" class="verde" class="preto">lista de numeros</h1>
+    <button onclick="numeros()">Listar</button>
+    <button onclick="limpar()">Limpar</button>
+    <button onclick="azul()">azul</button>
+    <button onclick="vermelho()">vermelho</button>
+    <button onclick="verde()">verde</button>
+    <button onclick="preto()">preto</button>
+
+    <ul id="lista"></ul>
+  </body>
+
+  <script>
+    function numeros() {
+      let maximo = Number(prompt("Até que número você quer?"));
+
+      let tag = document.getElementById("lista");
+      for (let x = 1; x <= maximo; x++)
+        if (isNumeroPar(x)) tag.innerHTML += "<li> Número " + x + "</li>";
+
+      function isNumeroPar(numero) {
+        return numero % 2 == 0;
+      }
+    }
+
+    function limpar() {
+      //terminar
+
+      let tag = document.getElementById("lista");
+      tag.innerHTML = "";
+    }
+
+      function azul() {  
+      let tag = document.getElementById("titulo").classList;
+      limparCores(tag);
+      tag.toggle("azul");  
+      
+  }  
+
+      function vermelho(btn) {
+      let tag = document.getElementById("titulo").classList;
+      limparCores(tag);
+      tag.toggle("vermelho");
+      
+  }
+
+      function verde() {
+      let tag = document.getElementById("titulo").classList;
+      limparCores(tag);
+      tag.toggle("verde");
+
+  }
+
+      function preto() {
+      let tag = document.getElementById("titulo").classList;
+      limparCores(tag);
+      tag.toggle("preto");
+      
+      }
+
+      function limparCores(tag) {
+      tag.remove("vermelho");
+      tag.remove("azul");
+      tag.remove("verde");
+      tag.remove("preto");
+  }
+  </script>
+
+
+
+</html>
