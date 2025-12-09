@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+</head>
+<body>
+    <h1>Digite uma atividade:</h1>
+    <input id="descricao" type="text">
+    <button onclick="adicionar()">Adicionar</button>
+    <h2>Lista das Atividades</h2>
+    <ol id="atividades"></ol>
+</body>
+
+<script>
+
+    let atividades = [];
+
+    function adicionar() {
+        let tagDescricao = document.getElementById('descricao');
+        atividades.push(tagDescricao.value);
+        listar();
+    }
+
+    function listar() {
+        let tagAtividades = document.getElementById('atividades');
+        tagAtividades.innerHTML = "";
+        for (let i=0; i < atividades.length; i++) {
+            if (atividades [i] !="") {
+            tagAtividades.innerHTML += '<li onclick = "remover('+i+')">' + atividades[i] + '</li>';
+            }
+        }; 
+    } 
+
+    function remover(item) {
+        atividades [item] = "";
+        listar();
+    }
+
+</script>
+</html>

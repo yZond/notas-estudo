@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .roxo {
+        color: purple;
+    }
+    .preto {
+        color: black;
+    }
+
+    .click {
+        border: none;
+    }
+    
+    .likes {
+        border: none;
+        background: none;
+        
+    }
+
+</style>
+<body onload="alert('Oi')">
+    <h1 id="texto">AOAWIQGDOUWSDLKASFNOIYWWAIWD</h1>
+    <button onmouseover="mudarParaRoxo()">roxo</button> 
+    <button onmouseover="mudarParaPreto()">preto</button>
+    <button onclick="contarClick()" class="likes">❤️</button>
+    <input class="click" id="qtdCliques" value="0" readonly = "true" disabled = "true" placeholder="curtidas"> 
+</body>
+
+    <script>
+
+ function mudarParaRoxo(){
+    let tag = document.getElementById("texto").classList;
+    limparCores(tag);
+    tag.add("roxo")
+ }
+ function mudarParaPreto(){
+    let tag = document.getElementById("texto").classList;
+    limparCores(tag);
+    tag.add("preto")
+ }
+
+ function limparCores(tag){
+    tag.remove("roxo");
+    tag.remove("preto");
+ }
+let cliques = 0;
+
+ function contarClick(){
+    cliques++;
+    document.getElementById("qtdCliques").value = cliques;
+ }
+
+
+    </script>
+
+</html>
